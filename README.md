@@ -15,4 +15,4 @@ This Is a Weather Website which tells the weather in a specific geographical are
 
 ## Authors
 
-- [@danielclerkson](https://www.github.com/Daniel-clerkson)
+- [@danielclerkson](https://www.github.com/Daniel-Clerkson)
