@@ -150,7 +150,7 @@ async function showPosition(position) {
 
     date.innerHTML = `${day}, ${month} ${dayEl}`;
     day1.innerHTML = days[dateObj.getUTCDay()];
-    day2.innerHTML = days[dateObj.getUTCDay() -6];
+    day2.innerHTML = days[dateObj.getUTCDay() +1];
     day3.innerHTML = days[dateObj.getUTCDay() -5];
     day4.innerHTML = days[dateObj.getUTCDay() -4];
     day5.innerHTML = days[dateObj.getUTCDay() -3];
