@@ -81,9 +81,10 @@ async function getWeather(){
         wday4.innerHTML = `${Math.round(forecastData.list[3].main.temp)}&deg;<sup>c</sup>`;
         wday5.innerHTML = `${Math.round(forecastData.list[4].main.temp)}&deg;<sup>c</sup>`;
         wimg1.setAttribute("src", `./assets/images/weather_icons/${forecastData.list[0].weather[0].icon}.png`);
-        wimg2.setAttribute("src", `./assets/images/weather_icons/${forecastData.list[numbers[2]].weather[0].icon}.png`);
-        wimg3.setAttribute("src", `./assets/images/weather_icons/${forecastData.list[numbers[3]].weather[0].icon}.png`);
-        wimg4.setAttribute("src", `./assets/images/weather_icons/${forecastData.list[numbers[4]].weather[0].icon}.png`);
+        wimg2.setAttribute("src", `./assets/images/weather_icons/${forecastData.list[numbers[1]].weather[0].icon}.png`);
+        wimg3.setAttribute("src", `./assets/images/weather_icons/${forecastData.list[numbers[2]].weather[0].icon}.png`);
+        wimg4.setAttribute("src", `./assets/images/weather_icons/${forecastData.list[numbers[3]].weather[0].icon}.png`);
+        wimg5.setAttribute("src", `./assets/images/weather_icons/${forecastData.list[numbers[4]].weather[0].icon}.png`);
 
         city1.innerHTML = `${weatherData.name}, ${weatherData.sys.country}`;
         let finalWeather = Math.round(weatherData.main.temp);
@@ -164,10 +165,11 @@ async function showPosition(position) {
     wday3.innerHTML = `${Math.round(forecastData.list[2].main.temp)}&deg;<sup>c</sup>`;
     wday4.innerHTML = `${Math.round(forecastData.list[3].main.temp)}&deg;<sup>c</sup>`;
     wday5.innerHTML = `${Math.round(forecastData.list[4].main.temp)}&deg;<sup>c</sup>`;
-    wimg1.setAttribute("src", `./assets/images/weather_icons/${forecastData.list[numbers[1]].weather[0].icon}.png`);
-    wimg2.setAttribute("src", `./assets/images/weather_icons/${forecastData.list[numbers[2]].weather[0].icon}.png`);
-    wimg3.setAttribute("src", `./assets/images/weather_icons/${forecastData.list[numbers[3]].weather[0].icon}.png`);
-    wimg4.setAttribute("src", `./assets/images/weather_icons/${forecastData.list[numbers[4]].weather[0].icon}.png`);
+    wimg1.setAttribute("src", `./assets/images/weather_icons/${forecastData.list[0].weather[0].icon}.png`);
+    wimg2.setAttribute("src", `./assets/images/weather_icons/${forecastData.list[numbers[1]].weather[0].icon}.png`);
+    wimg3.setAttribute("src", `./assets/images/weather_icons/${forecastData.list[numbers[2]].weather[0].icon}.png`);
+    wimg4.setAttribute("src", `./assets/images/weather_icons/${forecastData.list[numbers[3]].weather[0].icon}.png`);
+    wimg5.setAttribute("src", `./assets/images/weather_icons/${forecastData.list[numbers[4]].weather[0].icon}.png`);
 
 
     console.log(weatherData.main.temp)
