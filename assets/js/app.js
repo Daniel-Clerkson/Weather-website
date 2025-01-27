@@ -81,10 +81,9 @@ async function getWeather(){
         wday4.innerHTML = `${Math.round(forecastData.list[3].main.temp)}&deg;<sup>c</sup>`;
         wday5.innerHTML = `${Math.round(forecastData.list[4].main.temp)}&deg;<sup>c</sup>`;
         wimg1.setAttribute("src", `./assets/images/weather_icons/${forecastData.list[0].weather[0].icon}.png`);
-        wimg2.setAttribute("src", `./assets/images/weather_icons/${forecastData.list[numbers[1]].weather[0].icon}.png`);
-        wimg3.setAttribute("src", `./assets/images/weather_icons/${forecastData.list[numbers[2]].weather[0].icon}.png`);
-        wimg4.setAttribute("src", `./assets/images/weather_icons/${forecastData.list[numbers[3]].weather[0].icon}.png`);
-        wimg5.setAttribute("src", `./assets/images/weather_icons/${forecastData.list[numbers[4]].weather[0].icon}.png`);
+        wimg2.setAttribute("src", `./assets/images/weather_icons/${forecastData.list[numbers[2]].weather[0].icon}.png`);
+        wimg3.setAttribute("src", `./assets/images/weather_icons/${forecastData.list[numbers[3]].weather[0].icon}.png`);
+        wimg4.setAttribute("src", `./assets/images/weather_icons/${forecastData.list[numbers[4]].weather[0].icon}.png`);
 
         city1.innerHTML = `${weatherData.name}, ${weatherData.sys.country}`;
         let finalWeather = Math.round(weatherData.main.temp);
@@ -151,10 +150,10 @@ async function showPosition(position) {
 
     date.innerHTML = `${day}, ${month} ${dayEl}`;
     day1.innerHTML = days[dateObj.getUTCDay()];
-    day2.innerHTML = days[dateObj.getUTCDay() +1];
-    day3.innerHTML = days[dateObj.getUTCDay() +2];
-    day4.innerHTML = days[dateObj.getUTCDay() +3];
-    day5.innerHTML = days[dateObj.getUTCDay() +4];
+    day2.innerHTML = days[dateObj.getUTCDay() -6];
+    day3.innerHTML = days[dateObj.getUTCDay() -5];
+    day4.innerHTML = days[dateObj.getUTCDay() -4];
+    day5.innerHTML = days[dateObj.getUTCDay() -3];
     date1.innerHTML = `${dayEl +1}, ${month}`;
     date2.innerHTML = `${dayEl +2}, ${month}`;
     date3.innerHTML = `${dayEl +3}, ${month}`;
@@ -166,10 +165,9 @@ async function showPosition(position) {
     wday4.innerHTML = `${Math.round(forecastData.list[3].main.temp)}&deg;<sup>c</sup>`;
     wday5.innerHTML = `${Math.round(forecastData.list[4].main.temp)}&deg;<sup>c</sup>`;
     wimg1.setAttribute("src", `./assets/images/weather_icons/${forecastData.list[0].weather[0].icon}.png`);
-    wimg2.setAttribute("src", `./assets/images/weather_icons/${forecastData.list[numbers[1]].weather[0].icon}.png`);
-    wimg3.setAttribute("src", `./assets/images/weather_icons/${forecastData.list[numbers[2]].weather[0].icon}.png`);
-    wimg4.setAttribute("src", `./assets/images/weather_icons/${forecastData.list[numbers[3]].weather[0].icon}.png`);
-    wimg5.setAttribute("src", `./assets/images/weather_icons/${forecastData.list[numbers[4]].weather[0].icon}.png`);
+    wimg2.setAttribute("src", `./assets/images/weather_icons/${forecastData.list[numbers[2]].weather[0].icon}.png`);
+    wimg3.setAttribute("src", `./assets/images/weather_icons/${forecastData.list[numbers[3]].weather[0].icon}.png`);
+    wimg4.setAttribute("src", `./assets/images/weather_icons/${forecastData.list[numbers[4]].weather[0].icon}.png`);
 
 
     console.log(weatherData.main.temp)
